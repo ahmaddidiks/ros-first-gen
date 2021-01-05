@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+#tes dua node saling berkirim dan menggunakan mesage yg sama.
+# kalau pakai keduanya satu2 di masing2 node biasa.
+# ada 2 msg cm dan node2 tappi hanya pakai cm
+
 import rospy
 from std_msgs.msg import String
 from custom_msg.msg import cm, node2
@@ -25,5 +29,5 @@ if __name__ == '__main__':
        
     while not rospy.is_shutdown():
         kirim()
-        rospy.Subscriber("node2", node2, node1_callback)
+        rospy.Subscriber("node2", cm, node1_callback)
         rate.sleep()
