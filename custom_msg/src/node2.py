@@ -8,7 +8,7 @@ import rospy
 from std_msgs.msg import String
 from custom_msg.msg import cm, node2
 
-rospy.init_node("node2")
+rospy.init_node("node2_node")
 rate = rospy.Rate(10)
 pub = rospy.Publisher("node2", cm, queue_size=1)
 

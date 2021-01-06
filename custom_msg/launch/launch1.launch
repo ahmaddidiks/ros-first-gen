@@ -1,0 +1,4 @@
+<launch>
+  <node name="node1_node" pkg="custom_msg" type="node1.py" output="screen"/>
+  <node name="node2_node" pkg="custom_msg" type="node2.py" output="screen"/>
+</launch>

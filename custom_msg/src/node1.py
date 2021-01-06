@@ -9,7 +9,7 @@ from std_msgs.msg import String
 from custom_msg.msg import cm, node2
 
 #inisiasi node dan string publisher dg 10Hz
-rospy.init_node("node1")
+rospy.init_node("node1_node")
 rate = rospy.Rate(10)
 pub = rospy.Publisher("node1", cm, queue_size=1)
 
@@ -22,8 +22,6 @@ def kirim():
 
 def node1_callback(data):
     rospy.loginfo("kuliah = %s", data.school)
-
-
 
 if __name__ == '__main__':
        
